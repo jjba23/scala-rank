@@ -1,0 +1,13 @@
+.env
+dist/
+.direnv
+dist-newstyle/
+target/
+project/target/
+.bloop/
+.metals/
+.idea/
+.sbt/
+.scala-build
+.bsp
+ltximg

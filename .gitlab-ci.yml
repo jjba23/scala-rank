@@ -1,0 +1,11 @@
+stages:
+  - build
+
+build-job:
+  tags:
+    - saas-linux-large-amd64
+  image: nixos/nix
+  stage: build
+  script: |
+    unset TMPDIR
+    nix --extra-experimental-features 'nix-command flakes' --accept-flake-config develop -c make run-all

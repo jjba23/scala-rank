@@ -1,0 +1,21 @@
+* ZIO timeout v1
+
+** define a timeout function (with ZIO duration)  
+ZIO succeeds, before timeout, return succesful effect
+ZIO fails, before timeout, return failed effect
+ZIO takes longer than timeout, interrupt the effect
+  
+#+begin_src scala
+  def timeout[R,E,A](eff: ZIO[R,E,A], time: Duration): ZIO[R,E,A] = ???
+#+end_src
+
+* ZIO timeout v2
+** define a timeout function (with ZIO duration)  
+ZIO succeeds, before timeout, return succesful effect
+ZIO fails, before timeout, return failed effect
+ZIO takes longer than timeout, interrupt the effect, return successful effect with None
+hint foldCauseZIO
+  
+#+begin_src scala
+  def timeout_v2[R,E,A](zio: ZIO[R,E,A], time: Duration): ZIO[R,E,Option[A]] = ???
+#+end_src

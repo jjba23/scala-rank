@@ -1,0 +1,10 @@
+* Scala Rank
+
+Solving Hacker Rank problems in a structured, reproducible way, with Scala and Nix.
+
+- [[file:problems/mini-max-sum/README.org][Mini Max Sum]] :: Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+- [[file:problems/plus-minus/README.org][Plus Minus]] :: Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero.
+- [[file:problems/time-conversion/README.org][Time Conversion]] :: Given a time in 12-hour AM/PM format, convert it to military (24-hour) time.
+- [[file:problems/lonely-integer/README.org][Lonely Integer]] :: Given an array of integers, where all elements but one occur twice, find the unique element.
+- [[file:problems/diagonal-difference/README.org][Diagonal Difference]] :: Given a square matrix, calculate the absolute difference between the sums of its diagonals.
+- [[file:problems/counting-sort-1/README.org][Counting Sort 1]] :: Given a list of integers, count and return the number of times each value appears as an array of integers.
