@@ -64,5 +64,5 @@ object Main extends ZIOAppDefault {
   }
 
 // 3 never ending ZIO (not use callback?)
-// def neverEndingZIO[A]: UIO[A] = ???
+  def neverEndingZIO[A]: UIO[A] = ZIO.never
 }
